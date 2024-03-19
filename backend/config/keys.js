@@ -1,0 +1,11 @@
+/////////////////////////////////////////////////////////////////////
+
+  //key für die MongoDB
+
+/////////////////////////////////////////////////////////////////////
+
+
+module.exports = {
+    mongoURI: "mongodb+srv://Benutzer:BenutzPass@cluster0.gya63.mongodb.net/Cluster0?retryWrites=true&w=majority",
+    secretOrKey: "secret"
+  };

@@ -1,0 +1,194 @@
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-top: 4rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+    &_header{
+
+        &-icon{
+            display: block;
+            font-size: 6rem;
+            color: #ed6d00;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(0px 1px 1px rgba(0,0,0));
+        }
+        
+        &-h2{
+            text-align: center;
+            margin-top: 0.25rem;
+        }
+    }
+
+    &_menu{
+        display: inline-flex;
+        width:55rem;
+        position: sticky;
+        top:45px;
+        background-color: #fff;
+        padding-top: 1rem;
+        z-index: 10;
+
+        &-scroll{
+            box-shadow: 0px 4px 4px -5px rgba(0,0,0,1);
+        }
+
+        &-postpage{
+            display: grid;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            border-right: solid 2px #ed6d00;
+
+            &-button{
+                color: #ed6d00;
+                font-size: 16px;
+                background-color: rgba(0,0,0,0);
+                padding: 0.5rem 0;
+                border: none;
+            }
+        }
+
+        &-collectionpage{
+            display: grid;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            border-right: none;
+
+            &-button{
+                color: #ed6d00;
+                font-size: 16px;
+                background-color: rgba(0,0,0,0);
+                padding: 0.5rem 0;
+                border: none;
+            }
+        }
+    }
+
+    &_nopost{
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #666;
+        
+        &-icon{
+            display: block;
+            font-size: 3rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-kollektion{
+            width: 50rem;
+            text-align: center;
+        }
+    }
+
+    &_main{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 10px;
+        width: 50rem;
+
+        &-header{
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        &-link{
+            font-size: 4rem;
+            color: #ed6d00;
+            padding: 6rem 7.5rem;
+            border: solid 2px #ed6d00;
+            border-radius: 5px;
+
+            &-icon{
+                margin-top: 6rem;
+            }
+        }
+
+        &-collection {
+            margin-right: auto;
+            margin-left: auto;
+            line-height: 0px;
+
+            &-main{
+                width: 300px;
+                height: 268px;
+                overflow: hidden;
+                border: solid 2px #ed6d00;
+                border-radius: 5px;
+                background-color: #efefef;
+                margin-bottom: 2rem;
+
+                &-images{
+                    display: inline;
+                }
+
+                &-image{
+                    width: 50%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+
+                &-oneimage{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &_change{
+        width: 30rem;
+    }
+
+}
+
+@media only screen and (max-width: 880px) {
+    .profil_menu{
+        width: 100%;
+    } 
+
+    .profil_main{
+        display: block;
+        width: 100%;
+    }
+
+    .profil_main-collection-main{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profil_main-link{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    .profil_main-link-icon{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profil{
+        margin-top: 6rem;
+    }
+
+    .profil_menu{
+        top: 5rem;
+    }
+
+}

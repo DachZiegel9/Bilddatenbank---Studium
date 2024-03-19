@@ -1,0 +1,128 @@
+/*Überschrift*/
+.mainheader{
+    background-color: #ed6d00;
+    width: 30rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1rem;
+    border-radius: 5px;
+    transform: skew(-40deg);
+    filter: drop-shadow(5px 0px 1px rgba(0,0,0,0.7));
+
+    &-text{
+        transform: skew(40deg);
+        filter: drop-shadow(0px 1px 0px rgba(0,0,0,0.5));
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .mainheader{
+        width: 80%;
+    }
+}
+
+/*Zurück*/
+.back{
+    margin-bottom: 2rem;
+    margin-right: auto;
+
+    &-link{
+        color: #ed6d00;
+        text-decoration: none;
+    }
+}
+
+
+/*Buttons*/
+.button{
+    min-width: 10rem;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    background-color: #ed6d00;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 2rem;
+    border-radius: 5px;
+    border-color: #ed6d00;
+}
+
+@media only screen and (max-width: 480px) {
+    .button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+/*Inputfelder*/
+.inputfield{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border-color: #ed6d00;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+}
+
+@media only screen and (max-width: 700px) {
+    .inputfield{
+        width: 95%;
+    } 
+}
+
+/*Bestätigung, bei erfolgreicher Speicherung*/
+.accept{
+    width: 60%;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #080;
+    border-radius: 5px;
+    transform: skew(-40deg);
+    filter: drop-shadow(5px 0px 1px rgba(0,0,0,0.7));
+
+    &-text{
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        line-height: 2.5rem;
+        transform: skew(40deg);
+        filter: drop-shadow(0px 1px 0px rgba(0,0,0,0.5));
+    }
+}
+
+/*Nachricht, wenn du etwas falsch oder gar nicht eingegeben hast*/
+.message{
+    position: absolute;
+    padding-bottom: 0.25rem;
+    color: #f00;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+/*Nicht anzeigen*/
+.none{
+    display: none;
+}
+
+/*Rote Sterne*/
+.red{
+    display: inline;
+    color: #f00;
+}
+
+/*Ähhhmmm....*/
+.note{
+    display: inline;
+    font-size: 11px;
+    margin-left: 0.25rem;
+}
+
+.active{
+    border-bottom: solid 2px #ed6d00 !important;
+}

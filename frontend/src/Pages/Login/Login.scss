@@ -1,0 +1,62 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+    margin-top: 23vh;
+    font-family:Arial, Helvetica, sans-serif;
+
+    &_main{
+        width: 100%;
+
+        &-col{
+            width: 100%;
+        }
+
+        &-2col{
+            display: inline-flex;
+            flex-direction: column;
+            width: 50%;
+
+            &-link{
+                margin-left: auto;
+            }
+
+        }
+
+        &-log{
+            font-size: 0.75rem;
+            margin-bottom: -1rem;
+
+            &-link{
+                color: #ed6d00;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .login{
+        padding: 0 0.25rem;
+        margin-top: 10vh;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .login_main-2col{
+        width: 100%;
+    }
+
+    .login_main-2col-link{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

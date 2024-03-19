@@ -1,0 +1,112 @@
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+    margin-top: 2rem;
+    margin-top: 6rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+    &-accept{
+        margin-top: 1rem;
+    
+        &-text{
+            line-height: 1rem;
+        }
+    }
+
+    &_main{
+        width: 100%;
+        line-height: 0rem;
+
+        &-input-select{
+            width: 50%;
+        }
+
+        &-inputfile{
+            width: 100%;
+            line-height: 8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border: solid 2px;
+            border-color: #9e4900 #ed6d00 #ed6d00 #9e4900;
+            border-radius: 5px;
+            background-color: #fff;
+            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+        }
+
+        &-prevbutton{
+            width: 50%;
+            padding: 0;
+            line-height: 0;
+            margin-bottom: 1.5rem;
+            background-color: #fff;
+            border: solid 2px;
+            border-color: #9e4900 #ed6d00 #ed6d00 #9e4900;
+            border-radius: 5px;
+            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+
+            &-icon{
+                position: absolute;
+                color: #fff;
+                font-size: 4rem;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7));
+                opacity: 0;
+                z-index: 9;
+            }
+
+            &-image{
+                width: 100%;
+                border-radius: 3px;
+            } 
+
+            &:hover &-image{
+                -webkit-filter: blur(2px);
+                filter: blur(2px);
+                opacity: 0.6;            
+            }
+
+            &:hover &-icon{
+                opacity: 1 !important;            
+            }
+        }
+        
+        &-message{
+            position: relative;
+            margin-top: -1rem;
+            padding-bottom: 0.25rem;
+            color: #f00;
+            font-size: 0.75rem;
+            text-align: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .upload{
+        margin: 6rem 0.25rem 0;
+    }
+
+    .upload_header{
+        width: 80%;
+    }
+
+    .upload_main-input, .upload_main-inputfile{
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+
+    .upload{
+        margin-top: 8rem;
+    }
+    
+}

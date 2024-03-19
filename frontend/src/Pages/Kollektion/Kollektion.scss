@@ -1,0 +1,103 @@
+.kollektion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+    margin-top: 2rem;
+    margin-top: 6rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+    &_main{
+        width: 40rem;
+
+        &-post{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            margin-bottom: 1.5rem;
+
+            &-button{
+                background-color: rgba(0,0,0,0);
+                border: none;
+                width: 100%;
+
+                &-icon{
+                    position: absolute;
+                    color: #fff;
+                    font-size: 4rem;
+                    margin-left: 4.5rem;
+                    margin-top: 3rem;
+                    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7));
+                    opacity: 0;
+                    z-index: 9;
+                }
+            }
+
+            &-image{
+                height: 10rem;
+                width: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                border: solid 2px #ed6d00;
+                border-radius: 7px;
+            }
+        }
+
+        &-button{
+            text-align: center;
+        }
+
+        &-input{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-h3{
+            text-align: center;
+        }
+    }
+
+    &_accept{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .kollektion_main{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .kollektion_main-post {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kollektion_main-post-image{
+        height: 15rem;
+    }
+
+    .kollektion_main-post-button-icon {
+        margin-left: 25%;
+        margin-top: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .kollektion_main-post {
+        width: 80%;
+    }
+
+    .kollektion_main-post-button-icon {
+        margin-left: 30%;
+        margin-top: 5.5rem;
+    }
+}
